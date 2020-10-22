@@ -10,6 +10,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+img.random-catholic-image{
+    position: absolute;
+    align-self: center;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin-top: 10px;
+    width: 50vw;
+
+}
+
 h1.main-title{
     font-size: 3vw;
     text-align: center;
@@ -24,6 +34,7 @@ h2.main-subtitle{
 }
 
 div.loading-container{
+    z-index: 10;
     position: absolute;
     background-color: #ffffff;
     width: 100%;
@@ -31,6 +42,7 @@ div.loading-container{
 }
 
 img.cross-logo{
+    z-index: 10;
     width: 15vw;
     position: absolute;
     top: 60%;
