@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1.main-title{
+    font-size: 3vw;
+    text-align: center;
+    margin: 3vh;
+   
+}
+
+h2.main-subtitle{
+    font-size: 2vw;
+    text-align: center;
+
+}
+
+div.loading-container{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+img.cross-logo{
+    width: 15vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotateCross 1.5s infinite;
+}
+
+@keyframes rotateCross{
+    0%{
+        top: 60%;
+    }
+
+    50%{
+        top: 30%;
+    }
+
+    100%{
+        top: 60%;
+    }
+}
