@@ -15,6 +15,27 @@ h1.titleClass {
     text-shadow: 1px 1px blue;
 
 }
+div#loading-container{
+    z-index: 10;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+@keyframes rotateCross{
+    0%{
+        top: 60%;
+    }
+
+    50%{
+        top: 30%;
+    }
+
+    100%{
+        top: 60%;
+    }
+}
+
 h4#mainsubtitle {
     text-align: center;
 }
@@ -42,6 +63,15 @@ div.aholoder {
     top: 0;
    
 
+}
+img.cross-logo{
+    z-index: 10;
+    width: 15vw;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotateCross 1.5s infinite;
 }
 a.menu-item{
     transition: 0.5s ease;

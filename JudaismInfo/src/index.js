@@ -11,6 +11,11 @@ let holidaysContainer = document.getElementById("holidaysContainer")
 let originContainer = document.getElementById("originContainer")
 let religionContainer = document.getElementById("religionContainer")
 
+
+let loadingContainer = document.getElementById("loading-container")
+
+setTimeout(()=>{loadingContainer.style.display = "none";}, 3000)
+
 //checking containers
 function checkCtnr() {
     if (window.location.href.includes("#homeContainer")) {
